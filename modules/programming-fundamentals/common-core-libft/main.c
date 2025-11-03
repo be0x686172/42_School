@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:57:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/03 14:58:09 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/03 15:48:35 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	main(void)
 	int	isdigit_var = '8';
 
 	// Tests
-	printf("### FUNCTIONS TEST ###\n");
+	printf("### FUNCTIONS TESTS ###\n");
 	printf("\nft_isalpha(%d): %d\n", isalpha_var, ft_isalpha(isalpha_var));
 	printf("ft_isdigit(%d): %d\n", isdigit_var, ft_isdigit(isdigit_var));
 
