@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:57:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/03 17:21:54 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/03 18:30:39 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int	main(void)
 	int	isalnum_var = 'a';
 	int	isascii_var = 127;
 	int	isprint_var = 't';
+	const char	*strlen_var = "Hello, World !";
 
 	// Tests
 	printf("### FUNCTIONS TESTS ###\n");
@@ -42,6 +43,7 @@ int	main(void)
 	printf("ft_isalnum(%d): %d\n", isalnum_var, ft_isalnum(isalnum_var));
 	printf("ft_isascii(%d): %d\n", isascii_var, ft_isascii(isascii_var));
 	printf("ft_isprint(%d): %d\n", isprint_var, ft_isprint(isprint_var));
+	printf("ft_strlen(%s): %zu\n", strlen_var, ft_strlen(strlen_var));
 
 	// END
 	printf("\n### END ###\n");
