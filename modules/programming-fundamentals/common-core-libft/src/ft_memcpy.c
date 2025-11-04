@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_strlen.c                                      :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/04 09:53:17 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 10:25:19 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/04 10:48:21 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/04 10:51:05 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	test_strlen(void)
+void	*memcpy(void *dest, const void *src, size_t n)
 {
-    const char	*str = "Hello, World !";
+	size_t	i;
 
-    printf("ft_strlen(%s): %zu", str, ft_strlen(str));
+	i = 0;
+	return (dest);
 }

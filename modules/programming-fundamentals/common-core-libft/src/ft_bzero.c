@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_strlen.c                                      :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/04 09:53:17 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 10:25:19 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/04 10:31:14 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/04 10:41:43 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	test_strlen(void)
+void	ft_bzero(void *s, size_t n)
 {
-    const char	*str = "Hello, World !";
+	size_t			i;
+	unsigned char	*ptr;
 
-    printf("ft_strlen(%s): %zu", str, ft_strlen(str));
+	ptr = (unsigned char *)s;
+	i = 0;
+	while (i < n)
+	{
+		ptr[i] = 0;
+		i++;
+	}
 }

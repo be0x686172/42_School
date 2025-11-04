@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:57:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 09:56:18 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/04 10:53:54 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int	main(void)
 	test_isprint();
 	test_strlen();
 	test_memset();
+	test_bzero();
 
 	// END
 	printf("\n### END ###\n");

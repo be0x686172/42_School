@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:43:43 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 10:14:23 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/04 10:54:12 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
+void	ft_bzero(void *s, size_t n);
+void    *memcpy(void *dest, const void *src, size_t n);
 
 // Tests
 void	test_isalpha(void);
@@ -33,5 +35,7 @@ void	test_isascii(void);
 void	test_isprint(void);
 void	test_strlen(void);
 void	test_memset(void);
+void	test_bzero(void);
+void    test_memcpy(void);
 
 #endif
