@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 09:49:33 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 09:51:24 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/04 11:08:42 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	test_isalnum(void)
 {
-    int c = '2';
+	int c = '2';
 
-    printf("ft_isalnum(%d): %d\n", c, ft_isalnum(c));
+	printf("ft_isalnum(%d): %d\n", c, ft_isalnum(c));
 }

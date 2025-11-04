@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_bzero.c                                       :+:      :+:    :+:   */
+/*   test_memcpy.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/04 10:38:37 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 11:08:35 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/04 11:01:13 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/04 11:08:05 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	test_bzero(void)
+void	test_memcpy(void)
 {
-	char	str[20] = "Hello, World !";
-
-	printf("\nbefore_ft_bzero() : %s", str);
-	ft_bzero(str, 5);
-	printf(" | ft_bzero(str, 54, 5) : %s", str);
+	
 }

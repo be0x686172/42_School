@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 09:45:53 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 09:51:30 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/04 11:09:02 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	test_isdigit(void)
 {
-    int c = '2';
+	int c = '2';
 
-    printf("ft_isdigit(%d): %d\n", c, ft_isdigit(c));
+	printf("ft_isdigit(%d): %d\n", c, ft_isdigit(c));
 }
