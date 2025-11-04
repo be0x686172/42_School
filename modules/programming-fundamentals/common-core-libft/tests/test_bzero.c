@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 10:38:37 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 11:08:35 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/04 16:13:13 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ void	test_bzero(void)
 {
 	char	str[20] = "Hello, World !";
 
-	printf("\nbefore_ft_bzero() : %s", str);
-	ft_bzero(str, 5);
-	printf(" | ft_bzero(str, 54, 5) : %s", str);
+	ft_bzero(str + 2, 5);
+	printf("\n - ft_bzero(str, 54, 5) : %s <-- ['Hello, World !']", str);
 }

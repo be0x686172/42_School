@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:57:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 11:11:20 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/04 16:15:26 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,11 @@ int	main(void)
 	// #############################################
 
 	// Tests
-	printf("### FUNCTIONS TESTS ###\n");
+	printf(
+		"#############\n"
+		"### TESTS ###\n"
+		"#############\n"
+	);
 	
 	test_isalpha();
 	test_isdigit();
@@ -36,11 +40,16 @@ int	main(void)
 	test_isascii();
 	test_isprint();
 	test_strlen();
-	test_memset();
 	test_bzero();
+	test_memset();
 	test_memcpy();
+	test_memmove();
 
-	// END
-	printf("\n\n### END ###\n");
+	printf(
+		"\n\n###########\n"
+		"### END ###\n"
+		"###########\n"
+	);
+	
 	return (0);
 }

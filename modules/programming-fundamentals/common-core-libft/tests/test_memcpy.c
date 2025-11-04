@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 11:01:13 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 11:32:16 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/04 16:07:23 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	test_memcpy(void)
 {
 	char	dest[10];
 
-	ft_memcpy(dest, "Hello, World !", 12);
+	ft_memcpy(dest, "Hello, World !", 3);
 
-	printf("\nft_memcpy(dest, 'Hello, World !', n) : %s", dest);
+	printf("\n - ft_memcpy(dest, 'Hello, World !', n) : %s", dest);
 }

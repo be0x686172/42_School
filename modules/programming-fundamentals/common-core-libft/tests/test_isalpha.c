@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 09:32:12 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 11:08:49 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/04 16:06:26 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ void	test_isalpha(void)
 {
 	int c = 'W';
 
-	printf("\nft_isalpha(%d): %d\n", c, ft_isalpha(c));
+	printf("\n - ft_isalpha(%d): %d", c, ft_isalpha(c));
 }
