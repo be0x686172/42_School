@@ -6,12 +6,11 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:57:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/03 18:30:39 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/04 09:56:18 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdio.h>
+#include "includes/libft.h"
 
 int	main(void)
 {
@@ -28,22 +27,16 @@ int	main(void)
 	printf("\n");
 	// #############################################
 
-	// Variables
-	int	isalpha_var = 'W';
-	int	isdigit_var = '8';
-	int	isalnum_var = 'a';
-	int	isascii_var = 127;
-	int	isprint_var = 't';
-	const char	*strlen_var = "Hello, World !";
-
 	// Tests
 	printf("### FUNCTIONS TESTS ###\n");
-	printf("\nft_isalpha(%d): %d\n", isalpha_var, ft_isalpha(isalpha_var));
-	printf("ft_isdigit(%d): %d\n", isdigit_var, ft_isdigit(isdigit_var));
-	printf("ft_isalnum(%d): %d\n", isalnum_var, ft_isalnum(isalnum_var));
-	printf("ft_isascii(%d): %d\n", isascii_var, ft_isascii(isascii_var));
-	printf("ft_isprint(%d): %d\n", isprint_var, ft_isprint(isprint_var));
-	printf("ft_strlen(%s): %zu\n", strlen_var, ft_strlen(strlen_var));
+	
+	test_isalpha();
+	test_isdigit();
+	test_isalnum();
+	test_isascii();
+	test_isprint();
+	test_strlen();
+	test_memset();
 
 	// END
 	printf("\n### END ###\n");

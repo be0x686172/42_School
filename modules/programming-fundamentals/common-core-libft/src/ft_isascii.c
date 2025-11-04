@@ -6,11 +6,11 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 16:15:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/03 16:19:35 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/04 09:25:03 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	ft_isascii(int c)
 {

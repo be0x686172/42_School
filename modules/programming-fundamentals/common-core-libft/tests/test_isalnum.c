@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   test_isalnum.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/03 17:15:48 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/03 17:19:07 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/04 09:49:33 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/04 09:51:24 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
-int	ft_isprint(int c)
+void	test_isalnum(void)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+    int c = '2';
+
+    printf("ft_isalnum(%d): %d\n", c, ft_isalnum(c));
 }

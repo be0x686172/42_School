@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   test_isprint.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abehar-r <abehar-r@learner.42.tech>        +#+  +:+       +#+        */
+/*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/03 14:21:22 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/03 14:23:42 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/04 09:52:12 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/04 09:52:55 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
-int	ft_isdigit(int c)
+void	test_isprint(void)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	return (0);
+    int c = '2';
+
+    printf("ft_isprint(%d): %d\n", c, ft_isprint(c));
 }

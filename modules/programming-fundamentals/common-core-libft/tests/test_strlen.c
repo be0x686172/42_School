@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   test_strlen.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/03 17:52:41 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/03 18:26:16 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/04 09:53:17 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/04 09:54:24 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
-size_t	ft_strlen(const char *s)
+void	test_strlen(void)
 {
-	size_t	i;
+    const char	*str = "Hello, World !";
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+    printf("ft_strlen(%s): %zu\n", str, ft_strlen(str));
 }
