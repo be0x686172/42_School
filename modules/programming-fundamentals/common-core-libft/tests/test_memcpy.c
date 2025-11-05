@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 11:01:13 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/05 10:04:31 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/05 10:35:35 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ void	test_memcpy(void)
 
 	memcpy(src, src + 1, 1);
 
-	printf("\n - ft_memcpy(src, 'ABCDE', n) : %s", src);
+	printf("\n - ft_memcpy() : %s", src);
 }

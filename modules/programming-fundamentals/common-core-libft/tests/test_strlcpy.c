@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_isalpha.c                                     :+:      :+:    :+:   */
+/*   test_strlcpy.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/04 09:32:12 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/05 10:41:32 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/05 10:32:48 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/05 11:19:14 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	test_isalpha(void)
+void	test_strlcpy(void)
 {
-	int c = 'W';
+	char dest[15];
 
-	printf("\n - ft_isalpha(): %d", ft_isalpha(c));
+	printf("\n - ft_strlcpy(): %zu | dest : %s", ft_strlcpy(dest, "Hello !", 0), dest);
 }

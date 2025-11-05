@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:57:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/05 09:03:01 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/05 10:33:22 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ int	main(void)
 	test_memset();
 	test_memcpy();
 	test_memmove();
+	test_strlcpy();
 
 	printf(
 		"\n\n###########\n"

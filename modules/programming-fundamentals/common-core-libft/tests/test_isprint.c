@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 09:52:12 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 16:07:13 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/05 10:41:43 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ void	test_isprint(void)
 {
 	int c = '2';
 
-	printf("\n - ft_isprint(%d): %d", c, ft_isprint(c));
+	printf("\n - ft_isprint(): %d", ft_isprint(c));
 }

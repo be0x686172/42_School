@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 09:50:30 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/04 16:06:34 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/05 10:41:36 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ void	test_isascii(void)
 {
 	int c = '2';
 
-	printf("\n - ft_isascii(%d): %d", c, ft_isascii(c));
+	printf("\n - ft_isascii(): %d", ft_isascii(c));
 }
