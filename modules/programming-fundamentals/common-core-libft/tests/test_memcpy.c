@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 11:01:13 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/05 10:35:35 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/05 14:11:25 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 void	test_memcpy(void)
 {
-	char	src[] = "ABCDE";
+	char	dest[20] = "Hello";
+	char	src[] = "World";
 
-	memcpy(src, src + 1, 1);
+	ft_memcpy(dest + ft_strlen(dest), src, ft_strlen(src) + 1);
 
-	printf("\n - ft_memcpy() : %s", src);
+	printf("\n - ft_memcpy() : %s", dest);
 }

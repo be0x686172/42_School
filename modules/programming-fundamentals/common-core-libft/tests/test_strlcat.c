@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 11:21:53 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/05 12:10:56 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/05 14:55:26 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	test_strlcat(void)
 {
-	char dest[8] = "Hello";
+	char	dest[15] = "Hello";
+	char	src[] = "World";
 
-	printf("\n - ft_strlcat(): %zu | dest : %s", strlcat(dest, "World", sizeof(dest)), dest);
+	printf("\n - ft_strlcat(): %zu | dest : %s", ft_strlcat(dest, src, sizeof(dest)), dest);
 }
