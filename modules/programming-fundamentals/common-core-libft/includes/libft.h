@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:43:43 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/05 11:17:06 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/05 11:21:27 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 // Tests
 void	test_isalpha(void);
@@ -41,5 +42,6 @@ void	test_bzero(void);
 void	test_memcpy(void);
 void	test_memmove(void);
 void	test_strlcpy(void);
+void	test_strlcat(void);
 
 #endif
