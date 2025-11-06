@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:57:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 11:18:22 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/06 11:26:25 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ int	main(void)
 	test_strlcat();
 	test_toupper();
 	test_tolower();
+	test_strchr();
 
 	printf(
 		"\n\n###########\n"

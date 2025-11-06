@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:43:43 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 11:16:25 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/06 11:26:57 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+char	*ft_strchr(const char *s, int c);
 
 // Tests
 void	test_isalpha(void);
@@ -47,5 +48,6 @@ void	test_strlcpy(void);
 void	test_strlcat(void);
 void	test_toupper(void);
 void	test_tolower(void);
+void	test_strchr(void);
 
 #endif
