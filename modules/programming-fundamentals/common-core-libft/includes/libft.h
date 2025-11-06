@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:43:43 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 14:34:28 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/06 17:31:39 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 
 // Tests
 void	test_isalpha(void);
@@ -53,5 +54,6 @@ void	test_tolower(void);
 void	test_strchr(void);
 void	test_strrchr(void);
 void	test_strncmp(void);
+void	test_memchr(void);
 
 #endif

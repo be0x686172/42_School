@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_strlcpy.c                                     :+:      :+:    :+:   */
+/*   test_memchr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/05 10:32:48 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 17:37:05 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/06 17:33:26 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/06 18:30:28 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	test_strlcpy(void)
+void	test_memchr(void)
 {
-	char dest[15];
-
-	printf("\n - ft_strlcpy(): %zu | dest : %s", ft_strlcpy(dest, "Hello !", 14), dest);
+	printf("\n - ft_memchr() : %s", ft_memchr("Hello, World !", 'o', 6));
 }
