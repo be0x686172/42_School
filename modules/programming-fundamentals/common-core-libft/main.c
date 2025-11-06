@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abehar-r <abderahmane.behar-rahala@lear    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:57:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 17:37:30 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/06 21:37:06 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	main(void)
 		"### TESTS ###\n"
 		"#############\n"
 	);
-	
+
 	test_isalpha();
 	test_isdigit();
 	test_isalnum();
@@ -52,12 +52,13 @@ int	main(void)
 	test_strrchr();
 	test_strncmp();
 	test_memchr();
+	test_memcmp();
 
 	printf(
 		"\n\n###########\n"
 		"### END ###\n"
 		"###########\n"
 	);
-	
+
 	return (0);
 }
