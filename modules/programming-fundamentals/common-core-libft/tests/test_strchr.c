@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 11:25:52 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 12:12:06 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/06 14:10:25 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	test_strchr(void)
 {
-	printf("\n - ft_strchr() : %s", ft_strchr("Hello, World !", 'l'));
+	printf("\n - ft_strchr() : %s", ft_strchr("Hello, World !", 'o'));
 }

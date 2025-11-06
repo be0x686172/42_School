@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   test_strrchr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/06 11:25:00 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 14:10:10 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/06 13:27:46 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/06 14:09:15 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	test_strrchr(void)
 {
-	while (*s++)
-		if (*s == (char)c)
-			return ((char *)s);
-	if ((char)c == '\0')
-		return ((char *)s);
-	return (NULL);
+	printf("\n - ft_strrchr() : %s", ft_strrchr("Hello, World !", 'l'));
 }
