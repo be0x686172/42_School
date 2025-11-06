@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_memmove.c                                     :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/04 11:37:43 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 11:02:54 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/06 10:35:29 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/06 11:11:27 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	test_memmove(void)
+int	ft_toupper(int c)
 {
-	char	src[100] = "Geeksfor";
-
-	ft_memmove(src + 5, src, strlen(src) + 1);
-
-	printf("\n - ft_memmove() : %s", src);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
 }

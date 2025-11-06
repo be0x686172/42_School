@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_memmove.c                                     :+:      :+:    :+:   */
+/*   test_tolower.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/04 11:37:43 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 11:02:54 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/06 11:17:52 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/06 11:19:11 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	test_memmove(void)
+void	test_tolower(void)
 {
-	char	src[100] = "Geeksfor";
+	char	c = 'D';
 
-	ft_memmove(src + 5, src, strlen(src) + 1);
-
-	printf("\n - ft_memmove() : %s", src);
+	c = ft_tolower(c);
+	printf("\n - ft_toupper(): %c <-- ['D']", ft_tolower(c));
 }
