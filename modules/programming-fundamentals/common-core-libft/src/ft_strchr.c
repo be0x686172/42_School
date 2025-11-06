@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 11:25:00 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 14:10:10 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:12:36 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s++)
+	while (*s)
+	{
 		if (*s == (char)c)
 			return ((char *)s);
+		s++;
+	}
 	if ((char)c == '\0')
 		return ((char *)s);
 	return (NULL);

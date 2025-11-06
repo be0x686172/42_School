@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 11:35:34 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/05 10:23:08 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/06 17:15:11 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,17 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (NULL);
 	i = 0;
 	if (ptr_dest < ptr_src)
-		while (i++ < n)
+	{
+		while (i < n)
+		{
 			ptr_dest[i] = ptr_src[i];
+			i++;
+		}
+	}
 	else
+	{
 		while (n-- > 0)
 			ptr_dest[n] = ptr_src[n];
+	}
 	return (dest);
 }

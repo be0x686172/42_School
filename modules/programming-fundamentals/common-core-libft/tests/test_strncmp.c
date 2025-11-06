@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   test_strncmp.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/06 13:27:15 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 15:13:14 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/06 14:27:20 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/06 17:09:51 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	test_strncmp(void)
 {
-	const char	*start;
-
-	start = s;
-	while (*s)
-		s++;
-	if ((char)c == '\0')
-		return ((char *)s);
-	while (s >= start)
-	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s--;
-	}
-	return (NULL);
+	printf("\n - ft_strncmp(): %d", ft_strncmp("HellÉ", "Hella", 6));
 }
