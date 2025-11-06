@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_memchr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:33:26 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/06 18:30:28 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/06 21:25:16 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	test_memchr(void)
 {
-	printf("\n - ft_memchr() : %s", ft_memchr("Hello, World !", 'o', 6));
+	printf("\n - ft_memchr() : %p", memchr("Hello, World !", 'H', 6));
 }
