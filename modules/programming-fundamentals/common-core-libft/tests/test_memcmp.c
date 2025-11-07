@@ -14,5 +14,5 @@
 
 void	test_memcmp(void)
 {
-	printf("\n - ft_memcmp() : %d", memcmp("Acllo", "Acrld", 2));
+	printf("\n - ft_memcmp() : %d", ft_memcmp("Aac", "Acc", 6));
 }
