@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_strlcat.c                                     :+:      :+:    :+:   */
+/*   test_atoi.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/05 11:21:53 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/08 11:46:16 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/08 11:29:16 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/08 12:27:17 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	test_strlcat(void)
+void	test_atoi(void)
 {
-	char	dest[15] = "Hello";
-	char	src[] = "Worlddddddddddddddddddddddddddddddddddddddddd";
-
-	printf("\n - ft_strlcat(): %zu | dest : %s", ft_strlcat(dest, src, 15), dest);
+	printf("\n - ft_atoi() : %d", atoi("   +42-41"));
 }
