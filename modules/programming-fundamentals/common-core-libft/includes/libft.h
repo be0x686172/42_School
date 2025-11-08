@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abehar-r <abderahmane.behar-rahala@lear    +#+  +:+       +#+        */
+/*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:43:43 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/07 10:16:02 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/08 11:23:37 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdio.h>
 # include <string.h>
+# include <bsd/string.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -36,6 +37,7 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 // Tests
 void	test_isalpha(void);
@@ -57,5 +59,6 @@ void	test_strrchr(void);
 void	test_strncmp(void);
 void	test_memchr(void);
 void	test_memcmp(void);
+void	test_strnstr(void);
 
 #endif
