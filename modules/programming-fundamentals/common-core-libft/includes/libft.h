@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abehar-r <abderahmane.behar-rahala@lear    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:43:43 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/08 11:36:32 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/08 16:38:13 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stddef.h>
 # include <stdio.h>
 # include <string.h>
-# include <bsd/string.h>
 # include <stdlib.h>
 
 int		ft_isalpha(int c);
