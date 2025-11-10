@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 09:24:31 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/10 09:57:38 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/10 12:19:46 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	test_strdup(void)
 {
-	char	*str = ft_strdup("Hello les amis !");
+	char	*str = ft_strdup("abc");
 
 	printf("\n - ft_strdup(): %s", str);
 }
