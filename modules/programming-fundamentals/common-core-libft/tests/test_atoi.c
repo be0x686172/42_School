@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_atoi.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abehar-r <abderahmane.behar-rahala@lear    +#+  +:+       +#+        */
+/*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 11:29:16 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/08 17:18:06 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/10 08:51:01 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	test_atoi(void)
 {
-	printf("\n - ft_atoi() : %d", ft_atoi("42a"));
+	printf("\n - ft_atoi() : %d", ft_atoi("-42qq 45-"));
 }

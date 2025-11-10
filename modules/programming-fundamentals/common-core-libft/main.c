@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:57:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/08 14:28:32 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/10 08:58:46 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ int	main(void)
 	test_memcmp();
 	test_strnstr();
 	test_atoi();
+	test_calloc();
 
 	printf(
 		"\n\n###########\n"

@@ -1,38 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   test_calloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/08 11:36:39 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/10 08:50:06 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/10 08:56:55 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/10 09:16:55 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int	ft_atoi(const char *nptr)
+void	test_calloc(void)
 {
-	int	i;
-	int	sign;
-	int	res;
+	int	count = 6;
+	int	*tab = ft_calloc(count, sizeof(char)); 
+	int	i = 0;
 
-	i = 0;
-	sign = 1;
-	res = 0;
-	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
-		i++;
-	if (nptr[i] == '-' || nptr[i] == '+')
+	printf("\n - ft_calloc(): [");
+	
+	while (i < count)
 	{
-		if (nptr[i] == '-')
-			sign = -1;
+		if (i != count - 1)
+			printf("%d, ", tab[i]);
+		else
+			printf("%d]", tab[i]);
 		i++;
 	}
-	while (nptr[i] && ft_isdigit(nptr[i]))
-	{
-		res = res * 10 + (nptr[i] - '0');
-		i++;
-	}
-	return (res * sign);
+	
+	free(tab);
 }
