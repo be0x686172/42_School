@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:43:43 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/10 08:58:34 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/10 09:24:23 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(const char *s);
 
 // Tests
 void	test_isalpha(void);
@@ -64,5 +65,6 @@ void	test_memcmp(void);
 void	test_strnstr(void);
 void	test_atoi(void);
 void	test_calloc(void);
+void	test_strdup(void);
 
 #endif
