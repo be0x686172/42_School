@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:43:43 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/10 11:48:15 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/10 15:15:18 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 // Tests
 void	test_isalpha(void);
@@ -67,5 +68,6 @@ void	test_strnstr(void);
 void	test_atoi(void);
 void	test_calloc(void);
 void	test_strdup(void);
+void	test_substr(void);
 
 #endif
