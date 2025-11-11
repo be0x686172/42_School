@@ -1,32 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   test_strtrim.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/11 08:47:39 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/11 09:24:39 by abehar-r         ###   ########.fr       */
+/*   Created: 2025/11/11 09:18:15 by abehar-r          #+#    #+#             */
+/*   Updated: 2025/11/11 09:25:54 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	*ft_strjoin(const char *s1, const char *s2)
+void	test_strtrim(void)
 {
-	size_t	len_s1;
-	size_t	len_s2;
-	char	*ptr;
-
-	if (!s1 || !s2)
-		return (NULL);
-	len_s1 = ft_strlen(s1);
-	len_s2 = ft_strlen(s2);
-	ptr = malloc(len_s1 + len_s2 + 1);
-	if (!ptr)
-		return (NULL);
-	ft_memcpy(ptr, s1, len_s1);
-	ft_memcpy(ptr + len_s1, s2, len_s2);
-	ptr[len_s1 + len_s2] = '\0';
-	return (ptr);
+	printf("\n - ft_strtrim(): %s", ft_strtrim("Hello, World !", ""));
 }

@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:57:55 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/11 08:44:40 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/11 09:23:09 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ int	main(void)
 	test_strdup();
 	test_substr();
 	test_strjoin();
+	test_strtrim();
 
 	printf(
 		"\n\n###########\n"
