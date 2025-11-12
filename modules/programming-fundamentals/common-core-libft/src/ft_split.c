@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 11:08:06 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/12 12:15:31 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/12 18:57:49 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,6 @@ void	**ft_split(const char *s, char c)
 
 	s_trimmed = trim_s(s, c);
 	words_counted = count_words(s_trimmed, c);
-	s_splited = malloc()
+	s_splited = malloc(sizeof(char *) * (words_counted + 1));
 	printf("\n\tnombre de mots : %d", words_counted);
 }
