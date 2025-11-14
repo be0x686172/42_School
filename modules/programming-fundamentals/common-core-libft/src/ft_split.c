@@ -6,7 +6,7 @@
 /*   By: abehar-r <abehar-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 11:08:06 by abehar-r          #+#    #+#             */
-/*   Updated: 2025/11/14 17:59:34 by abehar-r         ###   ########.fr       */
+/*   Updated: 2025/11/14 18:34:38 by abehar-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,8 @@ static void	count_word_letters(const char *s, char c, char **s_splited)
 		}
 		i++;
 	}
-	s_splited[j] = malloc(sizeof(char) * (letters + 1));
+	if (letters > 0)
+		s_splited[j] = malloc(sizeof(char) * (letters + 1));
 }
 
 static void	fill_words(const char *s, char c, char **s_splited)
@@ -86,11 +87,14 @@ static void	fill_words(const char *s, char c, char **s_splited)
 		}
 		if (s[i] == c && letter > 0)
 		{
+			s_splited[word][letter] = '\0';
 			word++;
 			letter = 0;
 		}
 		i++;
 	}
+	if (letter > 0)
+		s_splited[word][letter] = '\0';
 }
 
 char	**ft_split(const char *s, char c)
@@ -103,7 +107,8 @@ char	**ft_split(const char *s, char c)
 	words_counted = count_words(s_trimmed, c);
 	s_splited = malloc(sizeof(char *) * (words_counted + 1));
 	count_word_letters(s_trimmed, c, s_splited);
-	fill_words(s, c, s_splited);
+	fill_words(s_trimmed, c, s_splited);
 	s_splited[words_counted] = NULL;
+	free(s_trimmed);
 	return (s_splited);
 }
